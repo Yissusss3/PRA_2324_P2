@@ -44,5 +44,23 @@ int main() {
         cout << "El valor 'd' se encuentra en la posicion: " << resultado6 << endl;
     }
 
+    vector<int> qs1 = {5, 2, 9, 1, 7};
+    QuickSort(qs1, 0, qs1.size() - 1);
+    cout << "QuickSort (último elemento como pivote): ";
+    for (int v : qs1) cout << v << " ";
+    cout << endl;
+
+    vector<int> qs2 = {5, 2, 9, 1, 7};
+    QuickSortFirstPivot(qs2, 0, qs2.size() - 1);
+    cout << "QuickSort (primer elemento como pivote): ";
+    for (int v : qs2) cout << v << " ";
+    cout << endl;
+
+    vector<int> qs3 = {5, 2, 9, 1, 7};
+    QuickSortMiddlePivot(qs3, 0, qs3.size() - 1);
+    cout << "QuickSort (elemento central como pivote): ";
+    for (int v : qs3) cout << v << " ";
+    cout << endl;
+
     return 0;
 }
